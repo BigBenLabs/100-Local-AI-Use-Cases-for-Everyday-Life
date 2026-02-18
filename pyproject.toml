@@ -1,0 +1,11 @@
+[project]
+name = "local_ai_use_cases"
+version = "0.1.0"
+description = "100 Local AI Use Cases for Everyday Life"
+authors = [{ name="dapeng Cui" }]
+dependencies = [
+
+]
+
+[tool.setuptools.packages.find]
+where = ["."]

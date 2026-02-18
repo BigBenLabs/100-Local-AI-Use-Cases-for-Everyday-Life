@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+apps/life/00_geo_poetry/prompts.py
+core/environment.py
+core/llm.py
+local_ai_use_cases.egg-info/PKG-INFO
+local_ai_use_cases.egg-info/SOURCES.txt
+local_ai_use_cases.egg-info/dependency_links.txt
+local_ai_use_cases.egg-info/top_level.txt
+tools/external_apis.py
