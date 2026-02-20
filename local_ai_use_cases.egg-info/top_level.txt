@@ -1,4 +1,0 @@
-apps
-core
-services
-tools
