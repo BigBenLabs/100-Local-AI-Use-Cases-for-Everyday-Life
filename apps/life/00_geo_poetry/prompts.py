@@ -1,4 +1,4 @@
-support_language = ['zh_CN','zh_HK','zh_TW','ja_JP','en_US','en_GB','en_CA','Unknown']
+support_language = ['zh_CN','en_US','en_GB','en_CA','Unknown']
 system_prompts = {
     "zh_CN":{
         "reply":"注意用中文回复。"
@@ -13,11 +13,12 @@ system_prompts = {
         "reply":"Please reply in English."
     },
     "Unknown":{
-        "reply":"Please reply in English."
+        "reply":"注意用中文回复。"
     }
 }
 user_prompts = {
     "zh_CN":{
+        "short":"zh",
         "name":"中文",
         "author":"诗词的作者",
         "title_of_poem":"这首诗或词的名字",
@@ -30,6 +31,7 @@ user_prompts = {
         "generate_season":"从以下时间中分析并提取信息，注意，只提取'TimeFomatOutPut' 这个class中定义的信息。"
     },
     "Unknown":{
+        "short":"zh",
         "name":"中文",    
         "author":"诗词的作者",
         "title_of_poem":"这首诗或词的名字",
@@ -42,6 +44,7 @@ user_prompts = {
         "generate_season":"从以下时间中分析并提取信息，注意，只提取'TimeFomatOutPut' 这个class中定义的信息。"
     },
     "en_US":{
+        "short":"en",
         "name":"English",
         "author":"The author of the poem",
         "title_of_poem":"The name of the poem",
@@ -54,6 +57,7 @@ user_prompts = {
         "generate_season":"Analyze and extract information from the following time periods. Note that only information defined in the 'TimeFormatOutPut' class should be extracted."
     },
     "en_GB":{
+        "short":"en",
         "name":"English",
         "author":"The author of the poem",
         "title_of_poem":"The name of the poem",
@@ -66,6 +70,7 @@ user_prompts = {
         "generate_season":"Analyze and extract information from the following time periods. Note that only information defined in the 'TimeFormatOutPut' class should be extracted."
     },
     "en_CA":{
+        "short":"en",
         "name":"English",
         "author":"The author of the poem",
         "title_of_poem":"The name of the poem",
