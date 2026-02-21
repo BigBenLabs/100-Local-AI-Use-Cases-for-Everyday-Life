@@ -1,4 +1,5 @@
 support_language = ['zh_CN','en_US','en_GB','en_CA','Unknown']
+# 'zh_HK','zh_TW','ja_JP'
 system_prompts = {
     "zh_CN":{
         "reply":"注意用中文回复。"

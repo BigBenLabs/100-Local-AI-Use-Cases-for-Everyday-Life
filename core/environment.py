@@ -1,5 +1,6 @@
 from datetime import datetime
 import locale
+import os
 # import time
 # import sys
 
@@ -9,26 +10,33 @@ def get_current_time():
 
 
 def get_system_language():
-    """Retrieve the language region of the current operating system（for example：en_US, zh_CN）"""
+    """Return 'en' for English systems, otherwise 'zh'."""
+    
+    lang = None
+
     try:
-        # 优先使用 locale.getdefaultlocale（在部分平台已弃用，但兼容性好）
-        lang, _ = locale.getdefaultlocale()
-        return lang or "Unknown"
+        lang, _ = locale.getlocale()
     except Exception:
+        pass
+
+    # fallback
+    if not lang:
         try:
-            # 更现代的 locale 模块方式（Python 3.10+）
-            lang = locale.getlocale()[0]
-            return lang or "Unknown"
+            lang, _ = locale.getdefaultlocale()
         except Exception:
-            # 最终回退：尝试环境变量
-            import os
-            lang = os.getenv('LANG', '')
-            if not lang:
-                lang = os.getenv('LC_ALL', '')
-            # 从形如 'en_US.UTF-8' 提取语言代码
-            if lang:
-                return lang.split('.')[0].split('_')[0] + '_' + (lang.split('.')[0].split('_')[1] if len(lang.split('.')) > 0 and '_' in lang.split('.')[0] else '')
-            return "Unknown"
+            pass
+
+    # env fallback
+    if not lang:
+        lang = os.getenv("LANG") or os.getenv("LC_ALL")
+
+    # final decision
+    if lang:
+        lang_code = lang.split('.')[0].split('_')[0].lower()
+        if lang_code == "en":
+            return "en"
+
+    return "zh"
         
 def get_user_coordinates():
     """
