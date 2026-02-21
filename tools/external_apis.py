@@ -34,56 +34,13 @@ async def get_weather(lat: float, lon: float, language: str) -> str:
             wind_direction = current.get("wind_direction_10m")
             weather_code = current.get("weather_code")
 
-            # Map WMO weather codes to simplified descriptions
-            # Ref: https://open-meteo.com/en/docs
-            weather_descriptions = {
-                0: "晴",
-                1: "少云",
-                2: "多云",
-                3: "阴",
-                45: "雾",
-                48: "冻雾",
-                51: "毛毛雨",
-                53: "小雨",
-                55: "大雨",
-                56: "冻毛毛雨",
-                57: "冻小雨",
-                61: "小雨",
-                63: "中雨",
-                65: "大雨",
-                66: "冻毛毛雨",
-                67: "冻小雨",
-                71: "小雪",
-                73: "中雪",
-                75: "大雪",
-                76: "冰晶（地表）",
-                77: "雪粒",
-                80: "阵雨",
-                81: "中阵雨",
-                82: "强阵雨",
-                95: "雷阵雨",
-                96: "雷阵雨有冰雹",
-                99: "强雷阵雨有冰雹"
-            }
-
-            # Format direction as cardinal direction if possible (simplified)
-            def deg_to_cardinal(deg):
-                dirs = ["北", "东北", "东", "东南", "南", "西南", "西", "西北"]
-                idx = round(deg / 45) % 8
-                return dirs[idx]
-
-            wind_dir_text = deg_to_cardinal(wind_direction) if wind_direction is not None else "未知"
-            temp_str = f"{temp}°C" if temp is not None else "无数据"
-            humidity_str = f"{humidity}%" if humidity is not None else ""
-            wind_str = f"风速 {wind_speed} km/h，风向 {wind_dir_text}" if wind_speed is not None and wind_direction is not None else "风力无数据"
-            weather_text = weather_descriptions.get(weather_code, f"天气代码 {weather_code}") if weather_code is not None else "无数据"
-            return f"现在天气：{weather_text}；温度：{temp_str}；湿度：{humidity_str}；{wind_str}"
+            return {"ok": True, "data": {"temp":temp,"humidity":humidity,"wind_speed":wind_speed,"wind_direction":wind_direction,"weather_code":weather_code}, "error": None}
         except httpx.HTTPStatusError as e:
-            return f"天气查询失败：HTTP {e.response.status_code}"
+            return {"ok": False, "data": None, "error": f"HTTP_{e.response.status_code}"}
         except (KeyError, TypeError) as e:
-            return f"天气数据解析异常：{e}"
+            return {"ok": False, "data": None, "error": "PARSE_ERROR"}
         except Exception as e:
-            return f"查询失败: {str(e)}"
+            return {"ok": False, "data": None, "error": ("UNKNOWN_ERROR", str(e))}
 
 
 async def get_location(lat: float, lon: float, language: str) -> str:
@@ -96,7 +53,7 @@ async def get_location(lat: float, lon: float, language: str) -> str:
                 "lat": lat,
                 "lon": lon,
                 "format": "json",
-                "accept-language": language if language else "cn"
+                "accept-language": language if language else "zh"
             }
             # Nominatim requires User-Agent header
             headers = {
@@ -118,7 +75,7 @@ async def get_location(lat: float, lon: float, language: str) -> str:
             city = address.get("city") or address.get("town") or address.get("village", "")
 
             # Format based on language
-            if language == "cn":
+            if language == "zh":
                 # Chinese: country + state + city (allowing empties)
                 parts = [p for p in [country, state, city] if p]
                 location_str = "".join(parts) or "未知地区"
@@ -126,10 +83,10 @@ async def get_location(lat: float, lon: float, language: str) -> str:
                 # En: city, state, country — only non-empty components
                 parts = [p for p in [city, state, country] if p]
                 location_str = ", ".join(parts) or "Unknown Location"
-            return f"所在的位置是：{location_str}"
+            return {"ok": True, "data": location_str, "error": None}
         except httpx.HTTPStatusError as e:
-            return f"位置查询失败：HTTP {e.response.status_code}"
+            return {"ok": False, "data": None, "error": f"HTTP_{e.response.status_code}"}
         except (KeyError, TypeError) as e:
-            return f"位置数据解析异常：{e}"
+            return {"ok": False, "data": None, "error": "PARSE_ERROR"}
         except Exception as e:
-            return f"查询失败: {str(e)}"
+            return {"ok": False, "data": None, "error": ("UNKNOWN_ERROR", str(e))}
