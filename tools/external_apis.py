@@ -59,7 +59,7 @@ async def get_location(lat: float, lon: float, language: str) -> str:
             headers = {
                 "User-Agent": "100-Local-AI-Use-Cases-for-Everyday-Life (contact: xbenben2011@gmail.com)",
                 "Accept": "application/json",
-                "Accept-Language": "en",
+                # "Accept-Language": "en",
                 "Connection": "keep-alive",
             }
             response = await client.get(base, params=params, headers=headers, timeout=10.0)

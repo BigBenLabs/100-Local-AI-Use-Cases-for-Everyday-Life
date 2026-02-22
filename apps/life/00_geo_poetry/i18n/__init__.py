@@ -7,4 +7,11 @@ LANG_MAP = {
 
 def t(lang: str, key: str, **kwargs):
     template = LANG_MAP.get(lang, en.TEXT).get(key, key)
-    return template.format(**kwargs)
+
+    if not isinstance(template, str):
+        return template
+
+    try:
+        return template.format(**kwargs)
+    except KeyError:
+        return template
