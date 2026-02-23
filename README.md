@@ -35,7 +35,8 @@
 
 ## 🎯 Current Use Cases
 
-**00. Poetry from Coordinates(坐标之诗)** [Explore](apps/life/00_geo_poetry/README.md) Before AI helps us improve work efficiency,it can help us feel the world again.
+**00. Poetry from Coordinates(坐标之诗)** [Explore](apps/life/00_geo_poetry/README.md) 
+Before AI helps us improve work efficiency,it can help us feel the world again.
 
 > More applications are under development...
 
@@ -105,7 +106,8 @@ Made with ❤️ by BigBenLabs
 
 ## 🎯 现有用例
 
-**00.坐标之诗（Poetry from Coordinates）** [Explore](apps/life/00_geo_poetry/README.md) 在 AI 帮助我们提升工作效率之前，它也可以帮助我们重新感受世界。
+**00.坐标之诗（Poetry from Coordinates）** [Explore](apps/life/00_geo_poetry/README.md) 
+在 AI 帮助我们提升工作效率之前，它也可以帮助我们重新感受世界。
 
 > 更多应用正在开发中...
 
