@@ -35,7 +35,7 @@
 
 ## 🎯 Current Use Cases
 
-**00. Location-Based Poetry Generator** Based on the user's input location coordinates, combined with local weather, culture, season and other contextual information, it finds an ancient poem that fits the current situation.
+**00. Poetry from Coordinates(坐标之诗)** [Explore](apps/life/00_geo_poetry/README.md) Before AI helps us improve work efficiency,it can help us feel the world again.
 
 > More applications are under development...
 
@@ -73,12 +73,12 @@ Special thanks to all developers who contributed to this project!
 
 ### 📧 Contact
 
-If you have any questions or suggestions, feel free to contact us through GitHub Issues.
+If you have any questions or suggestions, please feel free to contact me via GitHub Issues or email.
 
 
 <div align="center">
 
-**⭐ If this project helps you, please give us a star! ⭐**
+**⭐ If this project helps you, please give me a star! ⭐**
 
 Made with ❤️ by BigBenLabs
 
@@ -105,7 +105,7 @@ Made with ❤️ by BigBenLabs
 
 ## 🎯 现有用例
 
-**00.基于地理位置的诗词生成器** 根据用户输入的地理位置坐标，结合当地天气、人文、季节等上下文，找到一句古诗来契合当下情境。
+**00.坐标之诗（Poetry from Coordinates）** [Explore](apps/life/00_geo_poetry/README.md) 在 AI 帮助我们提升工作效率之前，它也可以帮助我们重新感受世界。
 
 > 更多应用正在开发中...
 
@@ -140,12 +140,12 @@ Made with ❤️ by BigBenLabs
 
 ## 📧 联系方式
 
-如有问题或建议，欢迎通过 GitHub Issues 联系我们。
+如有问题或建议，欢迎通过 GitHub Issues 或 E-mail 联系我。
 
 <div align="center">
 
 
-**⭐ 如果这个项目对你有帮助，请给我们一个星标！⭐**
+**⭐ 如果这个项目对你有帮助，请给我一个星标！⭐**
 
 Made with ❤️ by BigBenLabs
 
