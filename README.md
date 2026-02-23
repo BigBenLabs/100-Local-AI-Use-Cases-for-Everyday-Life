@@ -1,6 +1,6 @@
 # 100 Local AI Use Cases for Everyday Life
 
-<div align="center">
+<div align="left">
 100 Local AI Use Cases for Everyday Life is an open-source project exploring practical, privacy-friendly AI applications running locally. 
 
 
@@ -22,6 +22,7 @@
 **100 Local AI Use Cases for Everyday Life** is an open-source project exploring practical, privacy-friendly AI applications running locally. Each use case is modular, reproducible, and focused on real-world value — from personal productivity to learning, creativity, and automation. Build, experiment, and own your AI stack.
 
 
+
 ## ✨ Features
 
 - 🏠 **Local Execution**: Run all AI applications locally on your machine. Your data stays on your device — no cloud APIs, no privacy concerns.
@@ -31,11 +32,13 @@
 - 🚀 **Easy Deployment**: Simple installation and execution process for each use case.
 
 
+
 ## 🎯 Current Use Cases
 
 **00. Location-Based Poetry Generator** Based on the user's input location coordinates, combined with local weather, culture, season and other contextual information, it finds an ancient poem that fits the current situation.
 
 > More applications are under development...
+
 
 
 ## 📁 Project Structure
@@ -55,13 +58,18 @@
 └── README.md                # Project documentation
 ```
 
+
 ### 📝 License
 
 This project is licensed under the [MIT License](LICENSE). See [LICENSE](LICENSE) for details.
 
+
+
 ### 🙏 Acknowledgments
 
 Special thanks to all developers who contributed to this project!
+
+
 
 ### 📧 Contact
 
@@ -81,6 +89,8 @@ Made with ❤️ by BigBenLabs
 ## 📖 简介<a id="chinese"></a>
 
 100 Local AI Use Cases for Everyday Life 是一个开源项目，探索在本地运行的实用、隐私友好的 AI 应用场景。每个用例都是模块化、可重现的，专注于实际价值——从个人生产力到学习、创意和自动化。构建、实验，并掌控你的 AI 栈。
+
+
 
 ## ✨ 核心特性
 
