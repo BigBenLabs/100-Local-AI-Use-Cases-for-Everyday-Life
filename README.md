@@ -59,6 +59,73 @@ Before AI helps us improve work efficiency,it can help us feel the world again.
 └── README.md                # Project documentation
 ```
 
+## 🚀 Quick Start
+
+### 1. Clone the Repository
+
+Open your terminal and run the following commands:
+
+```bash
+git clone https://github.com/yourname/100-Local-AI-Use-Cases-for-Everyday-Life.git
+cd 100-Local-AI-Use-Cases-for-Everyday-Life
+```
+
+### 2. Set Up Environment
+
+Choose **one** of the following methods to prepare your environment:
+
+**Option A: Using venv (Recommended)**
+
+```bash
+# Create a virtual environment
+python -m venv .venv
+
+# Activate on Mac/Linux:
+source .venv/bin/activate
+
+# Activate on Windows:
+.venv\Scripts\activate
+```
+
+**Option B: Using Conda**
+
+```bas
+conda create --name local-ai python=3.10 -y
+conda activate local-ai
+```
+
+### 3. Install Dependencies
+
+Ensure your environment is active, then run:
+
+```bash
+pip install --upgrade pip
+pip install -e .
+```
+
+### 4. Run the Project
+
+Launch Jupyter Lab to start exploring the use cases:
+
+```bash
+jupyter lab
+```
+
+### 📖 How to Use
+
+After launching Jupyter Lab, navigate to the `apps/` directory in the sidebar.
+
+1. **Open a Notebook:** Runnable files are typically named `app.ipynb`.
+2. **Execute:** Click the **Run** button in the toolbar (as shown below) to see the results.
+
+![Demo](images/00.png)
+
+#### Example: "Poetry from Coordinates"
+
+Using the first application of this project as an example: after running the notebook and entering coordinates, you will receive an output like this:
+
+![Poetry from Coordinates Demo](images/00-en.png)
+
 
 ### 📝 License
 
@@ -130,43 +197,79 @@ Made with ❤️ by BigBenLabs
 └── README.md                # 项目说明
 ```
 
-## 快速开始
+## 🚀 快速开始
 
-克隆项目：
+### Step 1. 克隆项目
+
+打开终端，运行以下命令：
 
 ```bash
 git clone https://github.com/yourname/100-Local-AI-Use-Cases-for-Everyday-Life.git
 cd 100-Local-AI-Use-Cases-for-Everyday-Life
 ```
 
-创建虚拟环境：
+### Step 2. 创建虚拟环境
+
+请从以下两种方式中选择 **一种** 来准备你的运行环境：
+
+**方式 A：使用 venv**
 
 ```bash
+# 创建虚拟环境
 python -m venv .venv
-source .venv/bin/activate  # Mac/Linux
-# .venv\Scripts\activate   # Windows
+
+# Mac/Linux 激活方式：
+source .venv/bin/activate
+
+# Windows 激活方式：
+.venv\Scripts\activate
 ```
 
-安装依赖：
+**方式 B：使用 Conda（推荐）**
+```bash
+conda create --name local-ai python=3.10 -y
+conda activate local-ai
+```
+
+
+### Step 3. 安装依赖
+
+确保虚拟环境已激活，然后运行：
 
 ```bash
+pip install --upgrade pip
 pip install -e .
 ```
 
-运行项目：
+
+### Step 4. 运行项目
+
+启动 Jupyter Lab，开始探索这些本地 AI 应用案例：
+
 ```bash
 jupyter lab
 ```
 
-然后就可以打开目录  `apps/` 目录进行探索啦!
+### 📖 使用说明
 
-可运行文件通常叫 `app.ipynb` ，点击下图中的运行图标，即可看到示例结果。
+启动 Jupyter Lab 后，在左侧文件栏中进入 apps/ 目录。
+
+使用步骤：
+	1.	打开 Notebook： 可运行文件通常命名为 app.ipynb
+	2.	执行代码： 点击工具栏中的 Run（运行） 按钮（如下图所示）即可查看运行结果
+
 
 ![Demo](images/00.png)
 
-以本项止第一个应用：坐标之诗（Poetry from Coordinates）为例，点击运行并输入坐标后，输出如下：
+
+#### 示例：Poetry from Coordinates（坐标之诗）
+
+以本项目的第一个应用为例：
+
+运行 Notebook 并输入一组经纬度坐标后，你将得到类似如下的输出结果：
 
 ![Poetry from Coordinates Demo](images/00-zh.png)
+
 
 
 ## 📝 许可证
