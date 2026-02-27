@@ -74,7 +74,7 @@ cd 100-Local-AI-Use-Cases-for-Everyday-Life
 
 Choose **one** of the following methods to prepare your environment:
 
-**Option A: Using venv (Recommended)**
+**Option A: Using venv **
 
 ```bash
 # Create a virtual environment
@@ -87,7 +87,7 @@ source .venv/bin/activate
 .venv\Scripts\activate
 ```
 
-**Option B: Using Conda**
+**Option B: Using Conda (Recommended)**
 
 ```bas
 conda create --name local-ai python=3.10 -y
