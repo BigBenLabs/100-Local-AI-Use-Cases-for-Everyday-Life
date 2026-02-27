@@ -7,7 +7,7 @@
 一个探索实用、隐私友好型本地 AI 应用的开源项目，重点关注个人生产力、学习、创意和自动化等实际场景。
 
 [![License: MIT](https://ben-blog.oss-cn-shanghai.aliyuncs.com/hugoArticleImg/License-MIT-yellow-20260222215604960.svg)](https://opensource.org/licenses/MIT)
-[![Python](https://ben-blog.oss-cn-shanghai.aliyuncs.com/hugoArticleImg/Python-3.9%2B-blue-20260222215605009.svg)](https://www.python.org/downloads/)
+[![Python](https://ben-blog.oss-cn-shanghai.aliyuncs.com/hugoArticleImg/Python-3.10%2B-blue-20260222215605009.svg)](https://www.python.org/downloads/)
 [![Platform](https://ben-blog.oss-cn-shanghai.aliyuncs.com/hugoArticleImg/Platform-Linux%2520%257C%2520macOS%2520%257C%2520Windows-lightgrey-20260222215605071.svg)]()
 
 **🎯 Every AI use case is worth running locally**
@@ -113,7 +113,6 @@ Made with ❤️ by BigBenLabs
 
 
 
-
 ## 📁 项目结构
 
 ```
@@ -130,6 +129,44 @@ Made with ❤️ by BigBenLabs
 ├── LICENSE                  # MIT 许可证
 └── README.md                # 项目说明
 ```
+
+## 快速开始
+
+克隆项目：
+
+```bash
+git clone https://github.com/yourname/100-Local-AI-Use-Cases-for-Everyday-Life.git
+cd 100-Local-AI-Use-Cases-for-Everyday-Life
+```
+
+创建虚拟环境：
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Mac/Linux
+# .venv\Scripts\activate   # Windows
+```
+
+安装依赖：
+
+```bash
+pip install -e .
+```
+
+运行项目：
+```bash
+jupyter lab
+```
+
+然后就可以打开目录  `apps/` 目录进行探索啦!
+
+可运行文件通常叫 `app.ipynb` ，点击下图中的运行图标，即可看到示例结果。
+
+![Demo](images/00.png)
+
+以本项止第一个应用：坐标之诗（Poetry from Coordinates）为例，点击运行并输入坐标后，输出如下：
+
+![Poetry from Coordinates Demo](assets/gifs/00-zh.png)
 
 
 ## 📝 许可证
