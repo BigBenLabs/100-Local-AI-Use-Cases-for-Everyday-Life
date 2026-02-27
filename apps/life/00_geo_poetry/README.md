@@ -6,11 +6,7 @@
 > “Poetry lifts the veil from the hidden beauty of the world.”
 > — Percy Bysshe Shelley
 
-At the beginning of the project, I kept thinking about what the first small application of the 100 Local AI UseCase should be.
-
-Ultimately, I chose poetry because —
-
-Because poetry is one of the few things that can travel freely across:
+Poetry is one of the few things that can travel freely across:
 
 	•	geography
 	•	language
@@ -32,9 +28,6 @@ Given only latitude and longitude, the application:
 
 ## 💫 Sgnificance
 
-Before AI helps us improve work efficiency,
-it can help us feel the world again.
-
 Coordinates are among the most precise representations of reality.
 Poetry is among the most human.
 
@@ -42,6 +35,8 @@ This project exists at that intersection.
 
 It's a bridge.
 
+Before AI helps us improve work efficiency,
+it can help us feel the world again.
 
 ### 📧 Contact
 
@@ -53,12 +48,7 @@ If you have any questions or suggestions, please feel free to contact me via Git
 > “诗揭开世界隐藏之美的面纱。”
 > —— Percy Bysshe Shelley
 
-在项目刚开始时，我一直在思考：
-100 Local AI UseCase 的第一个小应用应该是什么。
-
-最终，我选择了诗词。
-
-因为诗词是少数能够自由穿越以下边界的事物：
+诗词是少数能够自由穿越以下边界的事物：
 
 	•	地理
 	•	语言
@@ -81,13 +71,13 @@ If you have any questions or suggestions, please feel free to contact me via Git
 
 ## 💫 意义
 
-在 AI 帮助我们提升工作效率之前，它也可以帮助我们重新感受世界。
-
 坐标越精确，诗歌越感性。
 
 这个项目，正存在于两者的交汇处。
 
 它是一座桥。
+
+在 AI 帮助我们提升工作效率之前，它也可以帮助我们重新感受世界。
 
 
 ## 📧 联系
